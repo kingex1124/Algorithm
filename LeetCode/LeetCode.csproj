@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9A72FBDE-3CD8-45D4-BFC8-EEC36AD6450D}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>LeetCode</RootNamespace>
+    <AssemblyName>LeetCode</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="9Chapter\RecoverRotatedSortedArray.cs" />
+    <Compile Include="AlgorithmHelp\UnionFind.cs" />
+    <Compile Include="Helper\ExtensionsHelp.cs" />
+    <Compile Include="Helper\QuickBuildTree.cs" />
+    <Compile Include="LeetCode\BinarySearch\Q004MedianofTwoSortedArrays.cs" />
+    <Compile Include="LeetCode\BinarySearch\Q033SearchinRotatedSortedArray.cs" />
+    <Compile Include="LeetCode\BinarySearch\Q034FindFirstandLastPositionofElementinSortedArray.cs" />
+    <Compile Include="LeetCode\BinarySearch\Q074Searcha2DMatrix.cs" />
+    <Compile Include="LeetCode\BinarySearch\Q081SearchinRotatedSortedArrayII.cs" />
+    <Compile Include="LeetCode\BinarySearch\Q153FindMinimuminRotatedSortedArray.cs" />
+    <Compile Include="LeetCode\BinarySearch\Q162FindPeakElement.cs" />
+    <Compile Include="LeetCode\BinarySearch\Q240Searcha2DMatrixII.cs" />
+    <Compile Include="LeetCode\BinarySearch\Q278FirstBadVersion.cs" />
+    <Compile Include="LeetCode\BinarySearch\Q374GuessNumberHigherorLower.cs" />
+    <Compile Include="LeetCode\BinarySearch\Q704BinarySearch.cs" />
+    <Compile Include="LeetCode\BinarySearch\Q852PeakIndexinaMountainArray.cs" />
+    <Compile Include="LeetCode\Fibonacci\Q070ClimbingStairs.cs" />
+    <Compile Include="LeetCode\Fibonacci\Q509FibonacciNumber.cs" />
+    <Compile Include="LeetCode\Fibonacci\Q746MinCostClimbingStairs.cs" />
+    <Compile Include="LeetCode\LinkedList\Q061RotateList.cs" />
+    <Compile Include="LeetCode\LinkedList\Q086PartitionList.cs" />
+    <Compile Include="LeetCode\LinkedList\Q092ReverseLinkedListII.cs" />
+    <Compile Include="LeetCode\LinkedList\Q109ConvertSortedListtoBinarySearchTree.cs" />
+    <Compile Include="LeetCode\LinkedList\Q138CopyListWithRandomPointer.cs" />
+    <Compile Include="LeetCode\LinkedList\Q141LinkedListCycle.cs" />
+    <Compile Include="LeetCode\LinkedList\Q142LinkedListCycleII.cs" />
+    <Compile Include="LeetCode\LinkedList\Q143ReorderList.cs" />
+    <Compile Include="LeetCode\LinkedList\Q148Sort List.cs" />
+    <Compile Include="LeetCode\LinkedList\Q160IntersectionOfTwoLinkedLists.cs" />
+    <Compile Include="LeetCode\LinkedList\Q025ReverseNodesink_Group.cs" />
+    <Compile Include="LeetCode\LinkedList\Q206ReverseLinkedList.cs" />
+    <Compile Include="LeetCode\LinkedList\Q237DeleteNodeinaLinkedList.cs" />
+    <Compile Include="LeetCode\LinkedList\Q707DesignLinkedList.cs" />
+    <Compile Include="LeetCode\LinkedList\Q876MiddleoftheLinkedList.cs" />
+    <Compile Include="LeetCode\Matrix\Q054SpiralMatrix.cs" />
+    <Compile Include="LeetCode\Matrix\Q059SpiralMatrixII.cs" />
+    <Compile Include="LeetCode\Q050Pow.cs" />
+    <Compile Include="LeetCode\Sort\Q912SortAnArray.cs" />
+    <Compile Include="LeetCode\TwoPointers\Q167TwoSumII_InputArrayIsSorted.cs" />
+    <Compile Include="LeetCode\TwoPointers\Q283MoveZeroes.cs" />
+    <Compile Include="LeetCode\Q053MaximumSubarray.cs" />
+    <Compile Include="LeetCode\Q349IntersectionofTwoArrays.cs" />
+    <Compile Include="LeetCode\Q350IntersectionofTwoArraysII.cs" />
+    <Compile Include="LeetCode\QueueStack\Q355DesignTwitter.cs" />
+    <Compile Include="LeetCode\QueueStack\Q225ImplementStackUsingQueues.cs" />
+    <Compile Include="LeetCode\QueueStack\Q232ImplementQueueUsingStacks.cs" />
+    <Compile Include="LeetCode\Rotate\Q189RotateArray.cs" />
+    <Compile Include="LeetCode\SortArray\Q088MergeSortedArray.cs" />
+    <Compile Include="LeetCode\Tree\BinarySearchTree\BreadthFirstSearch\Q102BinaryTreeLevelOrderTraversal.cs" />
+    <Compile Include="LeetCode\Tree\BinarySearchTree\BreadthFirstSearch\Q103BinaryTreeZigzagLevelOrderTraversal.cs" />
+    <Compile Include="LeetCode\Tree\BinarySearchTree\BreadthFirstSearch\Q107BinaryTreeLevelOrderTraversalII.cs" />
+    <Compile Include="LeetCode\Tree\BinarySearchTree\BreadthFirstSearch\Q126WordLadderII.cs" />
+    <Compile Include="LeetCode\Tree\BinarySearchTree\BreadthFirstSearch\Q127WordLadder.cs" />
+    <Compile Include="LeetCode\Tree\BinarySearchTree\BreadthFirstSearch\Q449SerializeAndDeserializeBST.cs" />
+    <Compile Include="LeetCode\Tree\BinarySearchTree\DepthFirstSearch\Q039CombinationSum.cs" />
+    <Compile Include="LeetCode\Tree\BinarySearchTree\DepthFirstSearch\Q040CombinationSumII.cs" />
+    <Compile Include="LeetCode\Tree\BinarySearchTree\DepthFirstSearch\Q046Permutations.cs" />
+    <Compile Include="LeetCode\Tree\BinarySearchTree\DepthFirstSearch\Q047PermutationsII.cs" />
+    <Compile Include="LeetCode\Tree\BinarySearchTree\DepthFirstSearch\Q051N-Queens.cs" />
+    <Compile Include="LeetCode\Tree\Graph\Q133CloneGraph.cs" />
+    <Compile Include="LeetCode\Tree\BinarySearchTree\BreadthFirstSearch\Q297SerializeandDeserializeBinaryTree.cs" />
+    <Compile Include="LeetCode\Tree\BinarySearchTree\Q1008ConstructBinarySearchTreeFromPreorderTraversal.cs" />
+    <Compile Include="LeetCode\Tree\BinarySearchTree\Q105ConstructBinaryTreeFromPreorderAndInorderTraversal.cs" />
+    <Compile Include="LeetCode\Tree\BinarySearchTree\Q110BalancedBinaryTree.cs" />
+    <Compile Include="LeetCode\Tree\BinarySearchTree\Q114FlattenBinaryTreeToLinkedList.cs" />
+    <Compile Include="LeetCode\Tree\BinarySearchTree\Q173BinarySearchTreeIterator.cs" />
+    <Compile Include="LeetCode\Tree\BinarySearchTree\Q235LowestCommonAncestorOfABinarySearchTree.cs" />
+    <Compile Include="LeetCode\Tree\BinarySearchTree\Q236LowestCommonAncestorOfABinaryTree.cs" />
+    <Compile Include="LeetCode\Tree\Graph\Q200NumberofIslands.cs" />
+    <Compile Include="LeetCode\Tree\Graph\Q207CourseSchedule.cs" />
+    <Compile Include="LeetCode\Tree\Graph\Q210CourseScheduleII.cs" />
+    <Compile Include="Lintcode\SubSet\lintcodeQ680SplitString.cs" />
+    <Compile Include="LeetCode\BinarySearch\Q035SearchInsertPosition.cs" />
+    <Compile Include="LeetCode\Anagram\Q049GroupAnagrams.cs" />
+    <Compile Include="LeetCode\SubSet\Q093RestoreIPAddresses.cs" />
+    <Compile Include="LeetCode\Palindrome\Q125ValidPalindrome.cs" />
+    <Compile Include="LeetCode\Tree\BinarySearchTree\DepthFirstSearch\Q131PalindromePartitioning.cs" />
+    <Compile Include="LeetCode\Anagram\Q242ValidAnagram.cs" />
+    <Compile Include="LeetCode\Reverse\Q344ReverseString.cs" />
+    <Compile Include="LeetCode\Q412FizzBuzz.cs" />
+    <Compile Include="LeetCode\Reverse\Q541ReverseStringII.cs" />
+    <Compile Include="LeetCode\Reverse\Q557ReverseWordsinaStringIII.cs" />
+    <Compile Include="LeetCode\Palindrome\Q680ValidPalindromeII.cs" />
+    <Compile Include="LeetCode\Tree\BinarySearchTree\Q094BinaryTreeInorderTraversal.cs" />
+    <Compile Include="LeetCode\Tree\BinarySearchTree\Q104MaximumDepthOfBinaryTree.cs" />
+    <Compile Include="LeetCode\Tree\BinarySearchTree\Q144BinaryTreePreorderTraversal.cs" />
+    <Compile Include="LeetCode\Tree\BinarySearchTree\Q145BinaryTreePostorderTraversal.cs" />
+    <Compile Include="LeetCode\Tree\BinarySearchTree\Q257BinaryTreePaths.cs" />
+    <Compile Include="LeetCode\Tree\Q429N-aryTreeLevelOrderTraversal.cs" />
+    <Compile Include="LeetCode\Tree\Q589N-aryTreePreorderTraversal.cs" />
+    <Compile Include="LeetCode\Tree\Q590N-aryTreePostorderTraversal.cs" />
+    <Compile Include="LeetCode\Tree\BinarySearchTree\Q637AverageOfLevelsInBinaryTree.cs" />
+    <Compile Include="LeetCode\Tree\BinarySearchTree\Q700SearchInABinarySearchTree.cs" />
+    <Compile Include="LeetCode\Tree\BinarySearchTree\Q701InsertIntoABinarySearchTree.cs" />
+    <Compile Include="LeetCode\Tree\BinarySearchTree\Q98ValidateBinarySearchTree.cs" />
+    <Compile Include="LeetCode\Vowels\Q345ReverseVowelsofaString.cs" />
+    <Compile Include="Lintcode\Tree\Graph\Q127TopologicalSorting.cs" />
+    <Compile Include="Lintcode\Tree\Graph\Q178GraphValidTree.cs" />
+    <Compile Include="Lintcode\Tree\BinaryTree\Q596MinimumSubtree.cs" />
+    <Compile Include="Lintcode\Tree\BinaryTree\Q597SubtreeWithMaximumAverage.cs" />
+    <Compile Include="Lintcode\Tree\Graph\Q605SequenceReconstruction.cs" />
+    <Compile Include="Lintcode\TwoPointers\Q031PartitionArray.cs" />
+    <Compile Include="Lintcode\TwoPointers\Q604WindowSum.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="LeetCode\TwoPointers\Q001TwoSum.cs" />
+    <Compile Include="LeetCode\Q002AddTwoNumbers.cs" />
+    <Compile Include="LeetCode\Q003LongestSubstringWithoutRepeatingCharacters.cs" />
+    <Compile Include="LeetCode\Q005LongestPalindromicSubstring.cs" />
+    <Compile Include="LeetCode\Q006ZigZagConversion.cs" />
+    <Compile Include="LeetCode\Reverse\Q007ReverseInteger.cs" />
+    <Compile Include="LeetCode\Q008StringtoInteger_atoi.cs" />
+    <Compile Include="LeetCode\Q009PalindromeNumber.cs" />
+    <Compile Include="LeetCode\Q011ContainerWithMostWater.cs" />
+    <Compile Include="LeetCode\Q012IntegertoRoman.cs" />
+    <Compile Include="LeetCode\Q013RomantoInteger.cs" />
+    <Compile Include="LeetCode\Q014LongestCommonPrefix.cs" />
+    <Compile Include="LeetCode\TwoPointers\Q0153Sum.cs" />
+    <Compile Include="LeetCode\TwoPointers\Q0163SumClosest.cs" />
+    <Compile Include="LeetCode\Q017LetterCombinationsOfaPhoneNumber.cs" />
+    <Compile Include="LeetCode\TwoPointers\Q0184Sum.cs" />
+    <Compile Include="LeetCode\LinkedList\Q019RemoveNthNodeFromEndofList.cs" />
+    <Compile Include="LeetCode\Q020ValidParentheses.cs" />
+    <Compile Include="LeetCode\LinkedList\Q021MergeTwoSortedLists.cs" />
+    <Compile Include="LeetCode\Q022GenerateParentheses.cs" />
+    <Compile Include="LeetCode\LinkedList\Q023MergekSortedLists.cs" />
+    <Compile Include="LeetCode\LinkedList\Q024SwapNodesinPairs.cs" />
+    <Compile Include="LeetCode\SubSet\Q078Subsets.cs" />
+    <Compile Include="LeetCode\SubSet\Q090SubsetsII.cs" />
+    <Compile Include="Solution\TreeViewAdd.cs" />
+    <Compile Include="Udemy\BinarySeacherTree.cs" />
+    <Compile Include="Udemy\Capitalize.cs" />
+    <Compile Include="Udemy\Chunk.cs" />
+    <Compile Include="Udemy\LevelWidth.cs" />
+    <Compile Include="Udemy\LinkedList.cs" />
+    <Compile Include="Udemy\MaxChar.cs" />
+    <Compile Include="Udemy\Palindromes.cs" />
+    <Compile Include="Udemy\Pyramid.cs" />
+    <Compile Include="Udemy\Queue.cs" />
+    <Compile Include="Udemy\ReduceAggregate.cs" />
+    <Compile Include="Udemy\ReverseInt.cs" />
+    <Compile Include="Udemy\Sorting.cs" />
+    <Compile Include="Udemy\Steps.cs" />
+    <Compile Include="Udemy\StringReverse.cs" />
+    <Compile Include="Udemy\Tree.cs" />
+    <Compile Include="Udemy\Vowels.cs" />
+    <Compile Include="Udemy\Weave.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
